@@ -1,0 +1,51 @@
+<div class="contenedor-padre">
+  
+    <mat-toolbar color="primary" class="barra">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="cajon.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Residecial</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    
+    <mat-sidenav-container class="contenedor">
+      <mat-sidenav style="min-width: 300px;" #cajon mode="side" opened>
+        <mat-nav-list>
+          <a mat-list-item href="#">Nueva Visita</a>
+          <a mat-list-item href="#">Visitas Recientes</a>
+        </mat-nav-list>
+        
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-icon color="primary">people_alt</mat-icon>Residentes
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+  
+            <mat-nav-list>
+              <a mat-list-item href="#">
+                <mat-icon color="primary">person_add</mat-icon>Nuevo Residente
+              </a>
+              <a mat-list-item href="#">
+                <mat-icon color="primary">format_list_bulleted</mat-icon>Listar Residente
+              </a>
+            </mat-nav-list>
+  
+          </mat-expansion-panel>
+        </mat-accordion>
+      
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, laudantium soluta omnis optio dignissimos quas quisquam a necessitatibus quam quos odit obcaecati accusamus ex velit magnam itaque illum blanditiis eveniet!
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rerum mollitia iste, corporis dolores nihil, a magnam doloremque ad soluta commodi, tempora accusamus animi recusandae et cum aliquid harum veniam?</p>
+      </mat-sidenav-content>
+  
+    </mat-sidenav-container>
+  
+  </div>
+  
